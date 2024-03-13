@@ -1,0 +1,21 @@
+.footerHome {
+  color: #666;
+  font-size: 11px;
+  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  margin: 10px 0 40px 0;
+}
+
+.footerHome {
+  text-align: center;
+}
+
+.footerHome ul {
+  padding: 0;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.footerHome ul li {
+  display: inline-block;
+  padding: 0 10px;
+}

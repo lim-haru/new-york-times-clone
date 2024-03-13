@@ -1,0 +1,24 @@
+main > div {
+  padding-right: 17px !important;
+}
+
+.separator {
+  position: relative;
+  padding-left: 17px !important;
+  border-top: 1px solid #000;
+}
+
+@media (min-width: 1200px) {
+  .separator {
+    border-top: none;
+  }
+
+  .separator::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-left: 1px solid #C7C7C7;
+  }
+}

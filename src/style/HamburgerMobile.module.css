@@ -1,0 +1,99 @@
+.menu {
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  border-right: 1px solid rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 0px 6px 1px;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.hamburger {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.research {
+  padding: 71px 24px 7px 24px;
+  display: flex;
+}
+
+.research input {
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(120, 120, 120);
+  box-sizing: border-box;
+  color: rgb(102, 102, 102);
+  font-size: 1rem;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: normal;
+  height: 35px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  padding: 1px 40px 0px 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.research button {
+  height: 35px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 8px 9px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  line-height: normal;
+}
+
+.list {
+  margin: 0;
+  padding: 0 24px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.list li {
+  border-bottom: 1px solid #DFDFDF;
+  width: 100%;
+  padding: 24px 12px 24px 0px;
+
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li:nth-child(6) {
+  border-bottom: 2px solid #121212;
+}
+
+.list li span {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4375rem;
+}
+
+.list li svg {
+  width: 12px;
+  color: #121212;
+}
+.list li svg polygon {
+ fill: #121212;
+}
+
+.cross {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 24px;
+  left: 24px;
+}

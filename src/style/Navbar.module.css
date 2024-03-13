@@ -1,0 +1,53 @@
+.navbar {
+  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-size: 12px;
+}
+.lens {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.bottomArrow {
+  width: 8px;
+  margin-left: 3px;
+}
+.button {
+  height: 29px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 8px 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  line-height: normal;
+}
+.languagesMenu {
+  font-size: 10px;
+}
+.nestedNav {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #000;
+  padding: 2px 0 2px 0 !important;
+}
+.nestedNav ul {
+  padding: 1.25rem 12px;
+}
+.nestedNav::after {
+  content: '';
+  border-bottom: 1px double #000;
+  display: block;
+}
+
+
+.user {
+  width: 24px;
+  height: 24px;
+}
+.title {
+  height: 31px;
+  margin: 0 10px 0 10px;
+}
+.separator {
+  border-bottom: 1px solid #e2e2e2;
+}

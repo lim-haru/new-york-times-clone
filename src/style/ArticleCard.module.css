@@ -1,0 +1,30 @@
+.title {
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-size: 1rem;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  color: #121212;
+}
+
+.timeReading {
+  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-size: 0.625rem;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #727272;
+  margin-top: 0.25rem;
+}
+
+.separator {
+  border: 1px solid #DFDFDF;
+  opacity: 1;
+}
+
+@media (max-width: 1199.98px) {
+  .articleImage {
+    max-width: 110px;
+  }
+}
