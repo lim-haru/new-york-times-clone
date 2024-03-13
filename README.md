@@ -32,7 +32,12 @@ Questo progetto è un clone del sito web The New York Times, realizzato utilizza
   npm install
   ```
 
-3. Avviare l'applicazione
+3. Crea la variabile ambiente nel tuo sistema o crea un file chiamandolo ".env" all'interno del progetto e inserisci API_KEY fornita da [NYT](https://developer.nytimes.com):
+  ```bash
+  REACT_APP_API_KEY=""
+  ```
+
+4. Avviare l'applicazione
   ```bash
   npm start
   ```
