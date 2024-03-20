@@ -8,10 +8,12 @@ import NavbarMobile from '../components/NavbarMobile'
 import Article from '../components/Article'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Home() {
   const [articles, setArticles] = React.useState([])
-
+  const [loading, setLoading] = React.useState(true)
+  
   React.useEffect(() => {
     const client = axios.create({
       baseURL: "https://api.nytimes.com/svc/topstories/v2"
@@ -27,6 +29,9 @@ export default function Home() {
       .catch((error) => {
         console.log(error.response)
       })
+      .finally(() => {
+        setLoading(false);
+      });
   }, [])
 
   const [isMobile, setIsMobile] = React.useState(false);
@@ -59,6 +64,15 @@ export default function Home() {
               figCaption={article.multimedia && article.multimedia[0].copyright}
             />
           ))}
+          <ClipLoader
+            loading={loading}
+            color="gray"
+            size={70}
+            speedMultiplier={0.7}
+            cssOverride={{ display: "block", margin: "90px auto" }}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </Col>
         <Col xl={4} className={style.separator}>
           <Sidebar />
