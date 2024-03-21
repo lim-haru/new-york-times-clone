@@ -18,6 +18,9 @@
   font-weight: 700;
   color: #121212;
 }
+.article:hover .title {
+  color: #5A5A5A;
+}
 
 .text {
   color: #5A5A5A;
@@ -59,25 +62,4 @@
 
 .separator > *:last-child::after {
   display: none;
-}
-
-
-section {
-  text-align: left;
-  cursor: pointer;
-}
-
-img {
-  width: 100%;
-  cursor: pointer;
-}
-
-figcaption {
-  font-family: nyt-franklin,helvetica,arial,sans-serif;
-  font-size: 0.6875rem;
-  line-height: 1.4em;
-  color: #727272;
-  vertical-align: text-top;
-  text-align: right;
-  margin-top: 0.25rem;
 }

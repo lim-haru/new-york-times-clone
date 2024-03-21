@@ -12,11 +12,11 @@ export default function Navbar() {
   return (
     <div className={`${style.navbar} pt-1`}>
       <div className='d-flex justify-content-between px-2'>
-        <div className='d-flex align-items-center gap-4'>
+        <div className='d-flex align-items-center gap-2'>
           <Hamburger />
           <Lens className={style.lens}/>
         </div>
-        <ul className={`${style.languagesMenu} d-flex gap-3 p-2`}>
+        <ul className={style.languagesMenu}>
           <li>U.S.</li>
           <li>INTERNATIONAL</li>
           <li>CANADA</li>

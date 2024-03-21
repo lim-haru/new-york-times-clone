@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 
 export default function ArticleCard(props) {
   return (
-    <Col as={'a'} href={props.url} target='_blank' xs={12} md={6} xl={12}>
+    <Col as={'a'} href={props.url} className={style.articleCard} target='_blank' xs={12} md={6} xl={12}>
       <Row>
         <Col>
           <section>

@@ -3,9 +3,10 @@
   font-size: 12px;
 }
 .lens {
-  width: 16px;
-  height: 16px;
+  width: 32px;
   cursor: pointer;
+  padding: 8px;
+  transition: all 0.6s ease 0s;
 }
 .bottomArrow {
   width: 8px;
@@ -21,10 +22,29 @@
   background-color: rgb(86, 123, 149);
   border: 1px solid rgb(50, 104, 145);
   line-height: normal;
+  transition: all 1.2s ease 0s;
+}
+.button:hover {
+  /* background-color: rgb(50, 104, 145); */
+  box-shadow: 10vw 0 0 rgb(50, 104, 145) inset;
 }
 .languagesMenu {
   font-size: 10px;
+  display: flex;
+  padding: 0;
+  margin-top: 5px;
 }
+.languagesMenu li {
+  padding: 6px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+}
+.lens:hover, .languagesMenu li:hover {
+  border-radius: 3px;
+  background-color: rgb(247, 247, 247);
+}
+
 .nestedNav {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #000;
@@ -37,6 +57,14 @@
   content: '';
   border-bottom: 1px double #000;
   display: block;
+}
+.nestedNav ul li {
+  cursor: pointer;
+}
+.nestedNav ul li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 

@@ -24,3 +24,27 @@ a {
 p {
   margin: 0;
 }
+
+section {
+  text-align: left;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.4em;
+  color: #727272;
+  vertical-align: text-top;
+  text-align: right;
+  margin-top: 0.25rem;
+}

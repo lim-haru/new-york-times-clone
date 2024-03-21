@@ -6,6 +6,9 @@
   font-weight: 700;
   color: #121212;
 }
+.articleCard:hover .title {
+  color: #5A5A5A;
+}
 
 .timeReading {
   font-family: nyt-franklin,helvetica,arial,sans-serif;
