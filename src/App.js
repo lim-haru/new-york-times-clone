@@ -2,7 +2,6 @@ import React from 'react'
 import Home from './pages/Home'
 import Section from './pages/Section'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 import Navbar from './components/Navbar'
 import NavbarMobile from './components/NavbarMobile'
 import Footer from './components/Footer'
@@ -28,8 +27,8 @@ function App() {
       <BrowserRouter>
         {isMobile ? <NavbarMobile /> : <Navbar />}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/section/:sectionName" element={<Section />} />
+          <Route path="/new-york-times-clone" element={<Home />} />
+          <Route path="/new-york-times-clone/section/:sectionName" element={<Section />} />
         </Routes>
         <Footer />
       </BrowserRouter>
