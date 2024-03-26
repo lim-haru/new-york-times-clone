@@ -15,6 +15,8 @@ Questo progetto è un clone del sito web The New York Times, realizzato utilizza
 - Axios
 - CSS Modules
 - Bootstrap
+- React Spinners
+- Helmet
 
 ## Come utilizzare il progetto
 1. Clona il repository sul tuo computer:
