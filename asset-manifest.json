@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new-york-times-clone/static/css/main.bc1cd03b.css",
-    "main.js": "/new-york-times-clone/static/js/main.44687e90.js",
+    "main.js": "/new-york-times-clone/static/js/main.07615f7a.js",
     "static/media/theNewYorkTimes.svg": "/new-york-times-clone/static/media/theNewYorkTimes.f9c4a612465f6643aa68dcda854d9d4b.svg",
     "static/media/user.svg": "/new-york-times-clone/static/media/user.8493e510fe5e2cc05226c8de4c1a58f1.svg",
     "index.html": "/new-york-times-clone/index.html",
@@ -10,10 +10,10 @@
     "static/media/hamburger.svg": "/new-york-times-clone/static/media/hamburger.08ea969ec1393e030a225bb9a2741763.svg",
     "static/media/arrow.svg": "/new-york-times-clone/static/media/arrow.cb8c3515a871a8d577c174035bf075a0.svg",
     "main.bc1cd03b.css.map": "/new-york-times-clone/static/css/main.bc1cd03b.css.map",
-    "main.44687e90.js.map": "/new-york-times-clone/static/js/main.44687e90.js.map"
+    "main.07615f7a.js.map": "/new-york-times-clone/static/js/main.07615f7a.js.map"
   },
   "entrypoints": [
     "static/css/main.bc1cd03b.css",
-    "static/js/main.44687e90.js"
+    "static/js/main.07615f7a.js"
   ]
 }
