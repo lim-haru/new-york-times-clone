@@ -1,26 +1,25 @@
 import React from 'react'
-import style from '../style/Home.module.css'
-import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Article from '../components/Article'
-import Sidebar from '../components/Sidebar'
 import ClipLoader from "react-spinners/ClipLoader"
+import { useParams } from "react-router-dom";
 import { useFetchData } from "../hooks/useFetchData"
 import SEO from '../SEO'
 
-export default function Home() {
-  const { articles, loading } = useFetchData("home")
-
+export default function Section() {
+  const { sectionName } = useParams()
+  const { articles, loading } = useFetchData(sectionName)
+  
   return (
     <div>
       <SEO
-        title="Clone - The New York Times"
-        description="Benvenuto nel mio clone del The New York Times! Esplora le ultime notizie, articoli e reportage su una vasta gamma di argomenti, dall'attualità alla politica, dalla cultura alla scienza e molto altro. Con una presentazione moderna e reattiva, forniamo aggiornamenti tempestivi e approfondimenti su ciò che sta accadendo nel mondo."
-        url="https://lim-haru.github.io/new-york-times-clone"
+        title={`Clone - The New York Times ${sectionName}`}
+        description={`Benvenuto nel mio clone del The New York Times! Esplora gli articoli su ${sectionName}`}
+        url={`https://lim-haru.github.io/new-york-times-clone/section/${sectionName}`}
         type="website"
       />
-      <Row as={'main'}>
-        <Col xl={8}>
+      <main className='d-flex justify-content-center'>
+        <Col xl={9}>
           {articles.map((article, index) => (
             <Article 
               key={index}
@@ -41,10 +40,7 @@ export default function Home() {
             data-testid="loader"
           />
         </Col>
-        <Col xl={4} className={style.separator}>
-          <Sidebar />
-        </Col>
-      </Row>
+      </main>
     </div>
   )
 }

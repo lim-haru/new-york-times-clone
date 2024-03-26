@@ -27,7 +27,7 @@
   padding: 0;
 }
 
-.menu ul li {
+.menu ul li a {
   position: relative;
   cursor: pointer;
   padding: 7px;
@@ -45,6 +45,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1em;
+  color: #121212;
 }
 
 .menu ul li svg {

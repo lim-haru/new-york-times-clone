@@ -63,11 +63,10 @@
   overflow-y: scroll;
 }
 
-.list li {
+.list li a {
   border-bottom: 1px solid #DFDFDF;
   width: 100%;
   padding: 24px 12px 24px 0px;
-
   position: relative;
   cursor: pointer;
   display: flex;
@@ -75,7 +74,7 @@
   align-items: center;
 }
 
-.list li:nth-child(6) {
+.list li:nth-child(11) {
   border-bottom: 2px solid #121212;
 }
 
@@ -84,6 +83,7 @@
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.4375rem;
+  color: #121212;
 }
 
 .list li svg {

@@ -2,6 +2,7 @@ import React from "react"
 import style from "../style/Hamburger.module.css"
 import {ReactComponent as HamburgerSvg} from '../images/hamburger.svg'
 import { ReactComponent as RightArrow } from "../images/arrow.svg"
+import { NavLink } from "react-router-dom";
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -12,101 +13,136 @@ export default function Hamburger() {
       <nav className={style.menu} style={{display: isOpen ? 'block' : 'none'}}>
         <ul>
           <li>
-            <span>Home Page</span>
+            <NavLink to={'/'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Home Page</span>
+            </NavLink>
           </li>
           <li>
-            <span>World</span>
-            <RightArrow />
+            <NavLink to={'/section/world'} onClick={() => setIsOpen(!isOpen)}>
+              <span>World</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>Business</span>
-            <RightArrow />
+            <NavLink to={'/section/business'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Business</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>U.S. Politics</span>
-            <RightArrow />
+            <NavLink to={'/section/politics'} onClick={() => setIsOpen(!isOpen)}>
+              <span>U.S. Politics</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>U.S. News</span>
-            <RightArrow />
+            <NavLink to={'/section/us'} onClick={() => setIsOpen(!isOpen)}>
+              <span>U.S. News</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>Sports</span>
-            <RightArrow />
+            <NavLink to={'/section/sports'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Sports</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>Health</span>
-            <RightArrow />
+            <NavLink to={'/section/health'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Health</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>N.Y.</span>
-            <RightArrow />
+            <NavLink to={'/section/nyregion'} onClick={() => setIsOpen(!isOpen)}>
+              <span>N.Y.</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>Opinion</span>
-            <RightArrow />
+            <NavLink to={'/section/opinion'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Opinion</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>Tech</span>
-            <RightArrow />
+            <NavLink to={'/section/technology'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Tech</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <li>
-            <span>Science</span>
-            <RightArrow />
-          </li>
-          <hr />
-          <li>
-            <span>Arts</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Book Review</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Style</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Food</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Travel</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Magazine</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>T Magazine</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Real Estate</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Obituaries</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Video</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>Graphics</span>
-            <RightArrow />
-          </li>
-          <li>
-            <span>The Upshot</span>
-            <RightArrow />
+            <NavLink to={'/section/science'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Science</span>
+              <RightArrow />
+            </NavLink>
           </li>
           <hr />
           <li>
-            <span>More</span>
-            <RightArrow />
+            <NavLink to={'/section/arts'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Arts</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/books'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Book Review</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/fashion'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Fashion</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/food'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Food</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/travel'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Travel</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/magazine'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Magazine</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/t-magazine'} onClick={() => setIsOpen(!isOpen)}>
+              <span>T Magazine</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/realestate'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Real Estate</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/obituaries'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Obituaries</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/movies'} onClick={() => setIsOpen(!isOpen)}>
+              <span>Movies</span>
+              <RightArrow />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={'/section/upshot'} onClick={() => setIsOpen(!isOpen)}>
+              <span>The Upshot</span>
+              <RightArrow />
+            </NavLink>
           </li>
         </ul>
       </nav>
