@@ -29,17 +29,17 @@ Questo progetto è un clone del sito web The New York Times, realizzato utilizza
   cd new-york-times
   ```
 
-2. Installare le dipendenze
+3. Installare le dipendenze
   ```bash
   npm install
   ```
 
-3. Crea la variabile ambiente nel tuo sistema o crea un file chiamandolo ".env" all'interno del progetto e inserisci API_KEY fornita da [NYT](https://developer.nytimes.com):
+4. Crea la variabile ambiente nel tuo sistema o crea un file chiamandolo ".env" all'interno del progetto e inserisci API_KEY fornita da [NYT](https://developer.nytimes.com):
   ```bash
   REACT_APP_API_KEY=""
   ```
 
-4. Avviare l'applicazione
+5. Avviare l'applicazione
   ```bash
   npm start
   ```
